@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <div class="code">
+
+    <form action="#" id="frm">
+    
+    <div class="form-group">    
+    <label for="url">ENTER YOUR WEBSITE URL</label>
+    <input type="url" id="url"  placeholder= "Enter your website URL" required>
+    </div>
+
+   <div class="form-group">
+    <label for="size">ENTER YOUR RESOLUTION</label>
+    <select  id="size">
+        <option value="100">100x100</option>
+        <option value="200">200x200</option>
+        <option value="300">300x300</option>
+        <option value="400">400x400</option> 
+    </select>
+   </div>
+
+<div class="form-group-clr">
+    <label for="lightcolor">COLOR</label>
+    <input type="color" id="lightcolor" value="#ecf0f1">
+</div>
+   
+
+<div class="form-group-clr">
+    <label for="darkcolor">COLOR</label>
+    <input type="color" id="darkcolor" value="#2c3e50">
+</div>
+
+<button type="submit" id="btn">
+    click to generate QR code
+</button>
+<a href="#" download id="btns">download OR code</a>
+    </form>
+</div>
+
+<div class="output">
+    <div id="qrcode"> 
+        <img src="https://cdn.aptika.com/images/qr-code-generator-fb.jpg">
+    </div>
+   
+
+<div class="loader">
+<div class="spinner"></div>
+<div class="spinner"></div>
+<div class="spinner"></div>
+<div class="p">loading....</div>
+</div>
+
+  </div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Shalimar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Island+Moments&family=Shalimar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    /* background: linear-gradient( 90deg, rgb(202, 78, 99) ,purple 50%); */
+    /* background-image: url(https://images.pexels.com/photos/5344843/pexels-photo-5344843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+    color: white;
+    background-size:cover;
+    background-position:center;
+    background-color:aliceblue;
+}
+
+.all{
+    height: 400px;
+    width: 400px;
+    /* background-color:rgba(0,0,0,0.5); */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 50%;
+    background:url(https://images.pexels.com/photos/5344843/pexels-photo-5344843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-size: cover;
+    opacity: .8;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;   */
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+p{
+    font-size: 18px;  
+    font-weight: bold;
+}
+.newyear{
+    font-size: 60px;
+    /* font-family: 'Freehand', cursive; */
+    /* font-family: 'Island Moments', cursive; */
+    font-family: 'Aladin', cursive;
+    letter-spacing: 4px;   
+}
+.counter{
+    display: flex;
+}
+.box{
+    height: 60px;
+    width: 80px;
+    text-align: center;
+    background-color: rgba(0,0,0,.7); 
+    margin-right: 10px; 
+    /* margin-top: 20px; */
+    border-radius: 50px;
+}
+.box h2{
+    font-size: 25px;
+}
+.box small{
+    font-size:12px;
+}

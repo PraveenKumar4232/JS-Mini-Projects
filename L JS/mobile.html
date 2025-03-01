@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealPhone advertisement</title>
+    <link rel="icon" href="images/mobile.png">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+<body>
+   <div class="container">
+    <nav>
+
+        <div class="logo">
+        <img src="images/logo.png" alt="logo">
+        </div>
+        
+        <div class="nav-list">
+            <ul>home</ul>
+            <ul>mobile</ul>
+            <ul>accesories</ul>
+            <ul>details</ul>
+            <ul>cart</ul>
+        </div>
+
+    </nav>
+
+    <div class="information">
+        <div class="overlay"></div>
+        <div class="mobile">
+            <img src="images/mobile.png" alt="">
+        </div>
+        <div id ="circle">
+            <div class="features one"><img src="images/battery.png" alt="" srcset="">
+            <h2>battery</h2>
+            <h4>5000 mAh</h4>
+            <h4>720Hrs standby</h4>
+            </div>
+            <div class="features two"><img src="images/camera.png" alt="" srcset="">
+            <h2>camera</h2>
+            <h4>20MP </h4>
+            <h4>wide angle lens</h4>
+            </div>
+            <div class="features three"one><img src="images/display.png" alt="" srcset="">
+            <h2>display</h2>
+            <h4>6.5' inch Mini-Drop FullScreen</h4>
+           </div>
+            <div class="features four"one><img src="images/processor.png" alt="" srcset="">
+            <h2>processor</h2>
+            <h4>snapdragon 720 G gaming processor </h4>
+            <h4>octa core </h3>
+           </div>
+        </div>
+    </div>
+
+    <div class="controls">
+  <div class="btn" id="up-arrow"><ion-icon name="arrow-round-down"></ion-icon></div>
+  <h2>features</h2>
+  <div class="btn" id="down-arrow"><ion-icon name="arrow-round-down"></ion-icon></div>
+    </div>
+
+   </div>
+</body>
+<script>
+   var circle=document.getElementById('circle');
+   var up=document.getElementById("up-arrow");
+   var down=document.getElementById("down-arrow");
+
+   var rotateValue=circle.style.transform;
+   var rotateSum;
+
+
+up.onclick=function(){
+    rotateSum=rotateValue+ "rotate(90deg)";
+    circle.style.transform=rotateSum;
+    rotateValue=rotateSum;
+}
+down.onclick=function(){
+    rotateSum=rotateValue+ "rotate(-90deg)";
+    circle.style.transform=rotateSum;
+    rotateValue=rotateSum;
+}
+</script>
+</html>
